@@ -1,7 +1,5 @@
 # DisGUVery
 
-version 1.0 
-
 Image analysis software to detect and analyse Giant Unilamellar Vesicles in microscopy images. 
 
 ## Getting started
@@ -36,6 +34,9 @@ DisGUVery has been developed and tested using the following library versions:
 * scikit-image -> v0.16 and v0.19
 * scipy -> v1.6 and v1.7
 
+## Feedback
+
+We welcome any questions about the use of DisGUVery, as well as bug reports and suggestions for improvement, both for the software and for the user guide. Please post your questions, remarks or suggestions in the appropriate issue boards or discussion forum. 
 
 ## License
 
