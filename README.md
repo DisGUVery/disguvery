@@ -1,6 +1,6 @@
 # DisGUVery
 
-Image analysis software to detect and analyse Giant Unilamellar Vesicles in microscopy images. 
+Image analysis software to detect and analyse Giant Unilamellar Vesicles in microscopy images. Read the original [DisGUVery preprint](https://www.biorxiv.org/content/10.1101/2022.01.25.477663v1) on bioRxiv. 
 
 ## Getting started
 
@@ -19,7 +19,7 @@ When running the software for the first time, you might encounter that some requ
 
 ## Usage
 
-After starting the software, you are ready to do GUV analysis! You can do your analysis in many different ways in DisGUVery. For complete instructions on usage and installation, check the quick user guide. Although you can operate the software only with the graphical interface, we recommend for you to keep an eye on the terminal/command propmt, as useful messages (sucessful / error operations) are shown there.
+After starting the software, you are ready to do GUV analysis! You can do your analysis in many different ways in DisGUVery. For complete instructions on usage and installation, check the quick user guide. Although you can operate the software only with the graphical interface, we recommend for you to keep an eye on the terminal/command propmt, as useful messages (successful / error operations) are shown there.
 
 ## Requirements
 
