@@ -1,0 +1,46 @@
+%% Intensity profiles with BMA
+
+-> Load image: guvs-singlechannel.tif
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Hough Detection
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Hough Detection
+-> Smoothing & Enhancement ON
+Edge threshold: 60
+Hough threshold: 50
+Min. distance: 200
+Min. radius: 10
+Max. radius: 400
+-> Run
+
+-> Membrane Segmentation -> Basic Membrane Analysis
+Membrane width: 30
+Contour position: Middle
+-> Run
+-> Save
+-> Close
+
+Ctrl + R (reset)
+
+-> Analysis -> Intensity Profiles
+Angular Profiles: enable
+dTheta: 2
+Ch1: enabled
+
+Radial Profiles: enable
+dr: 2
+Ch1: enabled
+
+Background Correction
+Ch1: None
+
+Normalisation
+Intensity: None
+Radius: None
+
+Inspect Vesicle: select vesicle 2 and 4 (not 1 and 6, different numbers due to software update)

@@ -1,0 +1,19 @@
+%% CHT detection
+
+-> Load image: guvs-singlechannel.tif
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Hough Detection
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Hough Detection
+-> Smoothing & Enhancement ON
+Edge threshold: 60
+Hough threshold: 50
+Min. distance: 200
+Min. radius: 10
+Max. radius: 400
+-> Run

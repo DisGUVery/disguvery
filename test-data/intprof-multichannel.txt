@@ -1,0 +1,60 @@
+%% Intensity Profiles from multichannel image with CHT
+
+-> Load image: guvs-multichannel.tif
+
+-> Image Options -> Channel Manager
+Membrane signal: Ch2
+Encapsulated content: Ch1
+-> Close
+
+-> Image Options -> Channels -> Channel 2
+
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Hough Detection
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Hough Detection
+-> Smoothing & Enhancement ON
+Edge threshold: 60
+Hough threshold: 50
+Min. distance: 200
+Min. radius: 10
+Max. radius: 400
+-> Run
+-> Save
+-> Close
+
+-> Membrane Segmentation -> Basic Membrane Analysis
+Membrane width: 30
+Contour position: Middle
+-> Run
+-> Save
+-> Close
+
+-> Image Options -> Reset Image (Ctrl + R)
+-> Image Options -> Channels -> All Channels
+
+-> Analysis -> Intensity Profiles
+Angular Profiles: enable
+dTheta: 5
+Ch1: enabled
+Ch2: enabled
+
+Radial Profiles: enable
+dr: 5
+Ch1: enabled
+Ch2: enabled
+
+Background Correction
+Ch1: ROI center
+Ch2: ROI corner
+
+Normalisation
+Intensity: Per Vesicle
+Radius: None
+
+Inspect Vesicle: select vesicle 1

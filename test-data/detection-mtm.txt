@@ -1,0 +1,32 @@
+%% MTM detection
+
+-> Load image: guvs-singlechannel.tif
+
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Multiscale Template Matching
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Template Matching
+-> Smoothing & Enhancement ON
+-> Select template from image (see user guide, template.png also included in repository)
+-> Set
+Resize range: 0.4-3
+Number of scales: 25
+Threshold match: 0.4
+-> Run Detection
+
+Alternatively:
+-> Vesicle Detection -> Detect Vesicles
+-> Template Matching
+-> Smoothing & Enhancement ON
+-> Load 
+-> Select template.png
+-> Set
+Resize range: 0.4-3
+Number of scales: 25
+Threshold match: 0.4
+-> Run Detection

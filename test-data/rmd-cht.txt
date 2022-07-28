@@ -1,0 +1,33 @@
+%% Refined membrane detection
+
+-> Load image: guvs-singlechannel-2.tif
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Hough Detection
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Hough Detection
+-> Smoothing & Enhancement ON
+Edge threshold: 60
+Hough threshold: 50
+Min. distance: 200
+Min. radius: 10
+Max. radius: 400
+-> Run
+-> Save
+-> Close
+
+-> Membrane Segmentation -> Refined Detection
+Filter: 6
+Threshold: 0.1
+-> Mask (make sure to create the mask in the right image, usually the membrane enhanced image)
+Bbox margin: 20
+Search size: 11
+Threshold: 0.15
+Search width: 4
+-> Select and detect
+-> Select vesicle 14
+-> Press select and detect again

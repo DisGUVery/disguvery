@@ -1,0 +1,22 @@
+%% Delete detected vesicles
+
+-> Load image: guvs-singlechannel.tif
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Floodfill
+Smooth filter Size: 5
+Enhancing filter Size: 105
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Floodfill
+-> Smoothing & Enhancement ON
+Threshold: 10
+Minimal area: 100
+-> Run Detection
+(do not close the Detection panel)
+
+-> Vesicle Detection -> Select and Delete (Ctrl + D)
+-> Left click on vesicle 3, 5 and 15
+-> Right click to confirm
+

@@ -1,0 +1,37 @@
+%% Basic encapsulation analysis
+
+-> Load image: guvs-multichannel.tif
+
+-> Image Options -> Channel Manager
+Membrane signal: Ch2
+Encapsulated content: Ch1
+-> Close
+
+-> Image Options -> Channels -> Channel 2
+
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Hough Detection
+Smooth filter Size: 15
+Enhancing filter Size: 45
+-> Save
+-> Close
+
+-> Vesicle Detection -> Detect Vesicles
+-> Hough Detection
+-> Smoothing & Enhancement ON
+Edge threshold: 60
+Hough threshold: 50
+Min. distance: 200
+Min. radius: 10
+Max. radius: 400
+-> Run
+-> Save
+-> Close
+
+-> Image Options -> Reset Image (Ctrl + R)
+-> Image Options -> Channels -> All Channels
+
+-> Analysis -> Encapsulation Efficiency
+-> Show Detection Mask
+Background Correction: B.Box Corner
+-> Run

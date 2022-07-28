@@ -1,0 +1,32 @@
+%% Refined encapsulation analysis
+
+-> Load image: guvs-multichannel.tif
+
+-> Image Options -> Channel Manager
+Membrane signal: Ch2
+Encapsulated content: Ch1
+-> Close
+
+-> Image Options -> Channels -> Channel 2
+
+-> Vesicle Detection -> Membrane Enhancement
+Settings: Floodfill
+Smooth filter Size: 5
+Enhancing filter Size: 105
+
+-> Vesicle Detection -> Detect Vesicles
+-> Floodfill
+-> Smoothing & Enhancement ON
+Threshold: 10
+Minimal area: 100
+-> Run Detection
+-> Save
+-> Close
+
+-> Analysis -> Encapsulation Efficiency
+Vesicle mask threshold: 1
+-> Refine Vesicle Mask (usually in the edged enhanced image of the membrane channel)
+Background Correction: B.Box Corner
+-> Reset image (Ctrl + R)
+-> Image Options -> Channels -> All Channels
+-> Run (Encapsulation Efficiency)
