@@ -1,0 +1,6 @@
+pillow==9.0
+numpy==1.22
+matplotlib==3.5
+opencv-python==4.5.5.62
+scikit-image==0.19
+ttkthemes==3.2.2
