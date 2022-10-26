@@ -1,0 +1,25 @@
+[project]
+name = "DisGUVery"
+version = "1.0.1"
+authors = [
+    {name = "Cristina Martinez-Torres"},
+    {name = "Lennard van Buren"},
+]
+description = "Image analysis software to detect and analyse Giant Unilamellar Vesicles in microscopy images"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+]
+
+dependencies = ['pillow>=9.0',
+        'numpy >= 1.0',
+        'matplotlib >=3.5',
+        'opencv-python>=4.5',
+        'scikit-image']
+
+[project.urls]
+"Homepage" = "https://github.com/DisGUVery/disguvery"
+"Bug Tracker" = "https://github.com/DisGUVery/disguvery/issues"
